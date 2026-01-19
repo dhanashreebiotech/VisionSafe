@@ -1,0 +1,17 @@
+# Core libraries for Video Processing and YOLO
+# Pinned OpenCV to 4.9.0.80 to support numpy<2.0 and avoid conflicts
+opencv-python==4.9.0.80
+ultralytics>=8.4.6
+pyyaml>=6.0
+tqdm>=4.66.0
+
+# Numpy pinned to <2.0 to ensure stability with PyTorch/TensorFlow ecosystem
+numpy<2.0
+
+# Windows-specific fixes (Recommended for your system to fix DLL errors)
+intel-openmp
+mkl
+
+# Note: access patterns for PyTorch (CPU vs GPU) vary.
+# If you need CPU-only PyTorch (for low resource PC), install it manually:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
