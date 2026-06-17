@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* ============================================
+   VisionSafe Enterprise — Tailwind v4 Theme
+   ============================================ */
+@theme {
+  /* Dark palette */
+  --color-dark-900: #111827;
+  --color-dark-800: #1f2937;
+  --color-dark-700: #374151;
+  --color-dark-600: #4b5563;
+  --color-dark-400: #9ca3af;
+
+  /* Primary (Enterprise Blue) */
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+
+  /* Status colors */
+  --color-danger: #ef4444;
+  --color-success: #10b981;
+}
+
+html,
+body {
+  background-color: #111827;
+  /* dark-900 */
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Fade-in animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-fade-in-data {
+  animation: fadeIn 0.25s ease-out;
+}

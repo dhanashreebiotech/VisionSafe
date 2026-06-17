@@ -1,0 +1,21 @@
+# VisionSafe Enterprise V2 - Dependencies
+# ==========================================
+
+# Core ML
+torch
+torchvision
+ultralytics
+numpy
+opencv-python-headless
+
+# API Server
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+
+# Training Pipeline
+scikit-learn
+
+# Legacy (for predict_hybrid.py / predict_hybrid_fast.py)
+mediapipe
